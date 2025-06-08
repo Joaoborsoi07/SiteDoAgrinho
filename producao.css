@@ -1,100 +1,87 @@
 body {
-  padding: 0;
-  margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .cabecalho {
-  color: white;
-  background-color: black;
-  text-align: center;
-  padding: 30px;
+    color: white;
+    background-color: black;
+    text-align: center;
+    padding: 30px;
 }
 
 .cabecalho h3 {
-  color: rgb(25, 150, 0);
+    color: rgb(25, 150, 0);
 }
 
 .footer {
-  background-color: black;
-  color: rgb(25, 150, 0);
-  text-align: center;
-  padding: 5px;
+    background-color: black;
+    color: rgb(25, 150, 0);
+    text-align: center;
+    padding: 5px;
 }
 
-/* Botão de voltar */
-.bloco-voltar {
-  position: fixed;
-  top: 120px; /* ajusta abaixo do cabeçalho */
-  right: 20px;
-  background-color: rgb(110, 110, 110);
-  color: rgb(255, 255, 255);
-  padding: 10px 20px;
-  border-radius: 15px;
-  font-weight: bold;
-  text-decoration: none;
-  z-index: 1000;
-  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.4);
-  border: 2px solid rgba(0, 0, 0, 0.4);
-  transition: background-color 0.3s;
+/* Imagem centralizada */
+.img-agua {
+    width: 600px;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-.bloco-voltar:hover {
-  background-color: #703e3e;
+/* Imagem nas laterais */
+.img-agua-lado {
+    width: 400px;
+    height: auto;
 }
 
-/* Layout de texto + imagem lado a lado */
+/* Texto com imagem ao lado */
 .texto-lado {
-  display: flex;
-  align-items: flex-start;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  gap: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-bottom: 3rem;
 }
 
-.texto-lado > div {
-  flex: 1 1 55%;
-  max-width: 600px;
+.texto-lado p {
+    max-width: 500px;
 }
 
-.texto-lado img {
-  flex: 1 1 40%;
+/* Botão de voltar fixo no canto superior direito */
+.botao-voltar {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: rgb(25, 150, 0);
+    color: black;
+    font-weight: bold;
+    border: 2px solid black;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 35px;
+    text-decoration: none;
+    font-size: 22px;
+    z-index: 1000;
+    transition: background-color 0.3s ease;
 }
 
-
-/* Imagem com tamanho correto */
-.img-certa {
-  width: 400px;
-  height: auto;
+.botao-voltar:hover {
+    background-color: rgb(25, 150, 0);
 }
 
-/* Botão circular de expandir texto */
-.botao-circular {
-  width: 30px;
-  height: 30px;
-  border-radius: 50%;
-  background-color: rgb(25, 150, 0);
-  color: black;
-  font-weight: bold;
-  border: 2px solid black;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-  display: inline-block;
-  text-align: center;
-  padding: 0;
+/* Linhas laterais nos textos */
+.bloco-esquerda {
+    border-left: 4px solid rgb(25, 150, 0); /* verde */
+    padding-left: 15px;
 }
 
-.botao-circular:hover {
-  background-color: rgb(25, 150, 0);
-}
-
-.extra-text {
-  display: none;
-  margin-top: 10px;
-  font-size: 1rem;
-  color: #333;
-}
-
-.extra-wrapper {
-  margin-top: 10px;
+.bloco-direita {
+    border-right: 4px solid rgb(39, 197, 8); /* azul */
+    padding-right: 15px;
 }
